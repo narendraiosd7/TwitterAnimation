@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HeartAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kLo-Rf-yOC">
+                                <rect key="frame" x="170.5" y="411.5" width="73" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kLo-Rf-yOC" secondAttribute="height" multiplier="1:1" id="DKp-ts-Cdq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL9-8K-qne">
+                                <rect key="frame" x="170.5" y="411.5" width="73" height="73"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="heartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uh8-Z9-oGu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QL9-8K-qne" firstAttribute="centerY" secondItem="kLo-Rf-yOC" secondAttribute="centerY" id="70R-ZP-uDE"/>
+                            <constraint firstItem="QL9-8K-qne" firstAttribute="height" secondItem="kLo-Rf-yOC" secondAttribute="height" id="DLS-eo-4Au"/>
+                            <constraint firstItem="kLo-Rf-yOC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EHK-mo-i9P"/>
+                            <constraint firstItem="QL9-8K-qne" firstAttribute="centerX" secondItem="kLo-Rf-yOC" secondAttribute="centerX" id="Poa-QZ-g6Q"/>
+                            <constraint firstItem="kLo-Rf-yOC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VPB-S2-ttm"/>
+                            <constraint firstItem="kLo-Rf-yOC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.082" id="hUY-A6-1GT"/>
+                            <constraint firstItem="QL9-8K-qne" firstAttribute="width" secondItem="kLo-Rf-yOC" secondAttribute="width" id="yQg-Q0-wtP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heartImageView" destination="kLo-Rf-yOC" id="cKY-0b-ceb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
